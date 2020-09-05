@@ -45,7 +45,6 @@
     </center>
    <br>
    <br>
-   <br>
    <h2>Introduction</h2>
      <p>This site is created to provide an introduction and availability of a toolbox of Flow* which is a formal verification tool for Cyber-Physical Systems. The first version of Flow* was released in 2013 as command line application that accepts a text file including the definition of the CPS model along with the reachability problem on it. The tool has been updated several times to the latest version 2.1.0. The main purpose to introduce a toolbox version of Flow* is to provide a more flexible way for users to <br>
      <b>(i) build and analyze complex CPS models, such as the neural network-controlled systems</b>, or <br>
@@ -54,7 +53,8 @@
      
      <font style="font-family: cursive">Q:</font>&nbsp;&nbsp;&nbsp;<i>How to use the Flow* toolbox?</i>
      <br>
-     <font style="font-family: cursive">A:</font>&nbsp;&nbsp;&nbsp;
+     <font style="font-family: cursive">A:</font>&nbsp;&nbsp;&nbsp; The Flow* toolbox provides a set of C++ data structures and functions for modeling the continuous and discrete dynamics in a CPS.<br><br><br>
+     <center><img src="../images/modeling.png" alt="modeling" width='1000'></center>
      <br>
      <br>
      <font style="font-family: cursive">Q:</font>&nbsp;&nbsp;&nbsp;<i>What are the guarantees on the obtained results?</i>
@@ -62,9 +62,23 @@
      <font style="font-family: cursive">A:</font>&nbsp;&nbsp;&nbsp;
      <br>
      <br>
+     <font style="font-family: cursive">Q:</font>&nbsp;&nbsp;&nbsp;<i>Is there any update from Flow* 2.1.0?</i>
      <br>
-     <h2>Bird's-Eye View</h2>
+     <font style="font-family: cursive">A:</font>&nbsp;&nbsp;&nbsp;
      <br>
+     <br>
+     <h2>Writing a simulator which produces reachable set overapproximations and verifying the safety</h2>
+     <p>You may write a simulator for your CPS using the C++ API provided by the toolbox. Instead of giving a comprehensive user's manual, we introduce the template programs for the following classes. </p>
+     <ul>
+        <li><a>Continuous system defined by <b><i>linear</i></b> ODE.</a></li>
+        <li><a>Continuous system defined by <b><i>nonlinear</i></b> ODE.</a></li>
+        <li><a>Dealing with a <b><i>time-triggered</i></b> jump.</a></li>
+        <li><a>Dealing with an <b><i>event-triggered</i></b> jump.</a></li>
+     </ul>
+     <br>
+     <font style="font-family: cursive">Q:</font>&nbsp;&nbsp;&nbsp;<i>How can I choose the right parameters for the reachability computation?</i>
+     <br>
+     <font style="font-family: cursive">A:</font>&nbsp;&nbsp;&nbsp;
      <br>
      <br>
      <h2>Applications</h2>
